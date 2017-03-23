@@ -30,6 +30,7 @@ class AddToWunderlistToolbarButton extends React.Component {
     }
 
     onClick(event) {
+        console.log('CHINGO BALINGO!');
         this.wunderlistStore.addToWunderlist();
 
         // Don't trigger the thread row click
@@ -54,7 +55,7 @@ class AddToWunderlistToolbarButton extends React.Component {
             >
                 <RetinaImg
                     mode={RetinaImg.Mode.ContentIsMask}
-                    url='nylas://n1-wunderlist/assets/n1-wunderlist-toolbar@2x.png'
+                    url='nylas://nylas-wunderlist/assets/n1-wunderlist-toolbar@2x.png'
                 />
             </button>
         );
